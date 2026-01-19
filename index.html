@@ -4,17 +4,27 @@
     <meta charset="UTF-8">
     <meta name="description" content="猫の好きなもの、日々の生活をご紹介">
     <title>猫の実態</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+     <!-- <style>
+        h1 {color: #f00;}
+        p {font-size: 20px;}
+     </style> -->
 </head>
 <body>
     <!--                      ここから本文                 -->
-    <h1>猫の一日</h1>
-    <p>ひたすら寝ています。</p>
+    <h1 style="color: #f00;">猫の一日</h1>
+    <p style="font-size: 30px;">ひたすら寝ています。</p>
+
     <p>体に優しい自然食を提供する、WCB CAFE。無添加の食材を利用したメニューが特徴です。</p>
     <p>おいしいブレンドコーヒーとヘルシーなオーガニックフードで体の内側から癒されてください。</p>
+
     <p>今すぐ<a href="http://google.co.jp">Google</a>で検索</p>
     <p><a href="http://google.co.jp" target="_blank">新規タブでGoogleを開く</a></p>
+
     <p>メール: <a href="mailto:masachika_okutu@pascl-edu.com">masachika_okutu@pascl-edu.com</a></p>
+    
     <p><a href="/pages/shk.html"><img src="images/sakura.jpg" alt="美しい桜"></a></p>
+    
     <ul>
         <li>卵（3個）</li>
         <li>しょうゆ（大さじ1）</li>
@@ -67,8 +77,14 @@
     <input type="checkbox" name="color" value="赤" checked>赤
     <input type="checkbox" name="color" value="青">青
     <input type="checkbox" name="color" value="黄">黄
-    <input type="checkbox" name="color" value="緑">緑
-    <input type="submit" value="送信"><br>
+    <input type="checkbox" name="color" value="緑">緑<br>
+    <input type="checkbox" name="travel" value="日本国内" id="japan">
+    <label for="japan">日本国内</label>
+    <input type="checkbox" name="travel" value="ヨーロッパ" id="europe" checked>
+    <label for="europe">ヨーロッパ</label>
+    <input type="checkbox" name="travel" value="東南アジア" id="seasia">
+    <label for="seasia">東南アジア </label>
+    <br><input type="submit" value="送信"><br>
     <input type="image" src="/images/button.png" alt="送信する"><br>
     血液型
     <select name="bloodtype">
@@ -87,7 +103,15 @@
         <option value="Unknown">不明</option>
     </select><br><br>
     <textarea name="message" placeholder="メッセージを入力"></textarea><br>
-    <input type="checkbox" name="travel" value="日本国内" id="japan">
-    <label for="japan">日本国内</label>
+    
+    <article>
+        <h1>明日の天気</h1>
+        <p>明日は曇りのち晴れでしょう。</p>
+    </article>
+
+    <section>
+        <h2>おすすめの着こなし</h2>
+        <p>この時期は暖かい気温が続きますが、一枚羽織る服があるといいでしょう。</p>
+    </section>
 </body>
 </html>
