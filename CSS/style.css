@@ -4,21 +4,33 @@ html{
 }
 
 body{
-    background-color: #fffeee;
+    background-color: #f5f2e5;
+    background-image: url(../images/bg.png);
+    background-repeat: repeat-y;
 }
 
 h1 {
-    color: #0bd; font-size: 3rem; font-family: sans-serif; font-weight: bold;
+    color: rgb(103, 26, 122); font-size: 3rem; font-family: sans-serif; font-weight: bold;
 }
 
 h2 {
-    font-size: 30px; font-family:serif;
+    font-size: 30px;font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 800; font-style: normal; color: rgba(114, 114, 218, 0.603);
 }
 
 p{
-    font-size: 20px; font-family: UD デジタル 教科書体 NK, serif;
+    font-size: 20px;
+    line-height: 1.7; text-align: justify;
+    color: rgba(12, 21, 59, 0.747);
 }
 
 div p{
-    color: red;
+    color: red；
+}
+
+div{
+    background-image: url(../images/bg-airplane.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
 }
