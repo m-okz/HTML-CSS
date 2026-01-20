@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>会員登録</h1>
+    以下の情報を入力し、送信ボタンをクリックしてください。<br><br>
+
+    <form action="http://192.168.3.223:8080//echo-server/echo" method="post">
+
+      <fieldset>
+        <legend>基本情報</legend>
+        <label for="username">お名前:</label>
+        <input type="text" id="username" name="username"><br>
+        <label for="email">メールアドレス:</label>
+        <input type="email" id="email" name="email"><br>
+        パスワード:<span style="padding: 0.5rem;"></span><input type="password" name="password">
+      </fieldset>
+
+      <fieldset>
+        <legend>性別</legend>
+        <input type="radio" name="gender" value="男" checked>男
+        <input type="radio" name="gender" value="女">女
+      </fieldset>
+
+      <fieldset>
+        <legend>生年月日</legend>
+        <input type="date" name="birthday">
+      </fieldset>
+
+      <fieldset>
+        <legend>会員種別</legend>
+        待遇
+        <select name="benefit">
+        <option value="" selected>選択してください</option>
+        <option value="個人会員">個人会員</option>
+        <option value="法人会員">法人会員</option>
+        <option value="特別会員">特別会員</option>
+        </select>
+        期間
+        <select name="period">
+        <option value="" selected>選択してください</option>
+        <option value="年間">年間</option>
+        <option value="終身">終身</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>希望メールマガジン</legend>
+        <input type="checkbox" name="mailmagazine" value="デザイナ向け" id="designer">
+        <label for="designer">デザイナ向け</label>
+        <input type="checkbox" name="mailmagazine" value="プログラマ向け" id="programmer">
+        <label for="programmer">プログラマ向け</label>
+        <input type="checkbox" name="mailmagazine" value="コンサルタント向け" id="consultant">
+        <label for="consultant">コンサルタント向け</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>その他</legend>
+        その他ご希望の内容:<br>
+        <textarea name="message" rows="5" cols="50"></textarea>
+      </fieldset>
+
+      <input type="submit" value="送信">
+      <input type="reset" value="入力クリア">
+
+    </form>
+</body>
+</html>

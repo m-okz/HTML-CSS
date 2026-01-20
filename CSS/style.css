@@ -28,9 +28,9 @@ div p{
     color: red；
 }
 
-div{
+/* div{
     background-image: url(../images/bg-airplane.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     height: 100vh;
-}
+} */
