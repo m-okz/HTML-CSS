@@ -32,7 +32,7 @@ img {
     font-family: 'Philosopher', sans-serif;
     font-weight: normal;
 }
-.page-title, .heading-large {
+.page-title, .heading-large, .heading-medium {
     font-size: 3rem;
     text-align: center;
 }
@@ -87,6 +87,15 @@ img {
     background-position: center bottom;
     height: 800px;
 }
+.sub-cover {
+    background-size: cover;
+    background-position: center bottom;
+    height: 528px;
+    margin-bottom: 4rem;
+}
+
+/* HOME
+---------------------------------------- */
 .cover-home {
     background-image: url(../images/cover-home-s.webp);
 }
@@ -97,6 +106,70 @@ img {
 }
 .about p {
     margin-bottom: 3rem;
+}
+
+/* NEWS
+---------------------------------------- */
+.cover-news {
+    background-image: url(../images/cover-news-s.webp);
+}
+
+/* 記事紹介 */
+.post {
+    margin-bottom: 3rem;
+}
+.post-title {
+    font-weight: normal;
+    margin-bottom: 1.25rem;
+}
+.post-info {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+.post-cat {
+    display: flex;
+    gap: .5rem;
+    list-style: none;
+}
+.post-cat a {
+    color: #432;
+    background-color: #faf7f0;
+    border-radius: 8px;
+    font-size: .875rem;
+    padding: .5rem .75rem;
+}
+.post-cat a:hover {
+    background-color: #c9c2bc;
+}
+.post-date {
+    font-size: .875rem;
+}
+.post-thumbnail {
+    border-radius: 16px;
+    margin-bottom: 1.5rem;
+}
+.post p {
+    margin-bottom: 1.5rem;
+    line-height: 2;
+}
+
+/* サイドバー*/
+.side-menu {
+    list-style: none;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.side-menu li {
+    border-bottom: 1px solid #c9c2bc;
+}
+.side-menu a {
+    color: #432;
+    display: block;
+    padding: 1rem;
+}
+.side-menu a:hover {
+    color: #0bd;
 }
 
 /* フッター
@@ -143,6 +216,9 @@ img {
     .heading-large {
         font-size: 4rem;
     }
+    .post-title {
+        font-size: 2rem;
+    }
 
     /* ヘッダー */
     .page-header {
@@ -154,12 +230,42 @@ img {
         font-size: 2rem;
     }
 
+    /* ヘッダーカバー画像 */
+    .sub-cover {
+        height: 400px;
+        margin-bottom: 6rem;
+    }
+
     /* Home */
     .cover-home {
         background-image: url(../images/cover-home-l.webp);
     }
     .about {
         margin: 4rem auto 0;
+    }
+
+    /* News */
+    .cover-news {
+        background-image: url(../images/cover-news-l.webp);
+    }
+    .news-contents {
+        display: flex;
+        justify-content: space-between;
+    }
+    .post {
+        width: 60%;
+        order: 2;
+    }
+    .sidebar {
+        width: 22%;
+        order: 3;
+    }
+    .ad {
+        order: 1;
+    }
+    .sidebar .heading-medium {
+        line-height: 1;
+        margin-bottom: 1rem;
     }
 
     /* フッター*/
