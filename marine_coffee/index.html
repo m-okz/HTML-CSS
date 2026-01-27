@@ -4,8 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marine Coffee | トップページ</title>
+    <style>
+        main{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .flex-item{
+            background-color: lightgray;
+            outline: solid 1px;
+            flex-basis: fit-content;
+            /* width: 200px; */
+            height: 100px;
+        }
+        #item1{
+            flex-basis: 40%;
+        }
+        header{
+            /* outline: solid black 1px; */
+            nav{
+                ul{
+                    display: flex;
+                    justify-content: center;
+                    list-style: none;
+                    flex-wrap: wrap;
+
+                    li{
+                        padding: 0.5rem;
+                        background-color: aquamarine;
+                        border: 1px solid black;
+                        text-align: center;
+                        /* flex-grow: 1; */
+                        /* flex-basis: 200px; */
+                        min-width: 150px;
+                    }
+                }
+            }
+        }
+        .grid-container{
+            /* width: 600px; */
+            display: grid;
+            grid-template-columns: repeat(4, minmax(150px, 1fr));
+            grid-template-rows: 100px 150px 200px;
+        }
+        #item6{
+            grid-row: 3/4;
+            grid-column: 2/4;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="grid-container">
+        <div class="grid-item">
+            <img src="#" alt=".item image"><br>
+            商品名<br>
+            商品説明
+        </div>
+        <div class="grid-item">アイテム2</div>
+        <div class="grid-item">アイテム3</div>
+        <div class="grid-item">アイテム4</div>
+        <div class="grid-item">アイテム5</div>
+        <div class="grid-item">アイテム6</div>
+    </div>
+    <main>
+        <span class="flex-item" id="item1">テキスト1</span>
+        <span class="flex-item">テキスト2</span>
+        <span class="flex-item">テキスト3</span>
+    </main>
+    <header>
+        <nav>
+            <ul>
+              <li><a href="#">メニュー1</a></li>
+              <li><a href="#">メニュー2</a></li>
+              <li><a href="#">メニュー3</a></li>
+              <li><a href="#">メニュー4</a></li>
+              <li><a href="#">メニュー5</a></li>
+            </ul>
+        </nav>
+    </header>
 </body>
 </html>

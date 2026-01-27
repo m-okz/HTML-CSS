@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせ</title>
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <style>
+        header{
+            margin-bottom: 3rem;
+            padding: 1rem 0rem .5rem 0rem;
+            text-align: center;
+            background-color: rgba(209, 239, 253, 0.63);
+        }
+        footer{
+            text-align: center;
+            background-color: gray;
+            padding:  1.6rem 0rem;
+        }
+        .bg01{
+            background:#FFFFFF ;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>お問い合わせ</h1>
+        <p>お問い合わせはこちらのフォームをご利用ください。</p>
+    </header>
+    <main class="container bg01"> <!-- container-fluid で画面に合わせて拡大-->
+      <h2>お問い合わせフォーム</h2>
+      <form action="#" method="post">
+        <div class="row">
+            <label class="col-md-3">お名前 <span class="badge text-bg-danger">必須</span></label>
+            <p class="col-md-9 text-white"><input type="text"></p>
+        </div>
+        <div class="row">
+            <label class="col-md-3">メールアドレス <span class="badge text-bg-danger">必須</span></label>
+            <p class="col-md-9"><input type="email"></p>
+        </div>
+        <div class="row">
+            <span class="col-md-3">きっかけ <span class="badge text-bg-danger">必須</span></span>
+            <label class="col-md-9">
+                <input type="radio" name="oppo"> 口コミ
+                <input type="radio" name="oppo"> 検索エンジン
+                <input type="radio" name="oppo"> その他</label>
+        </div>
+        <div class="row">
+            <label class="col-md-3">種別 <span class="badge text-bg-danger">必須</span></label>
+            <p class="col-md-9">
+                <select name="classify">
+                    <option value="noselect">選択してください</option>
+                </select>
+            </p>
+        </div>
+        <div class="row">
+            <label class="col-md-3">内容 <span class="badge text-bg-danger">必須</span></label>
+            <p class="col-md-9 text-white"><textarea rows="message"></textarea></p>
+        </div>
+        <div class="row">
+            <p class="col-md-6 text-white"><button type="submit">確認する</p>
+        </div>
+      </form>
+    </main>
+    <footer>
+        <div class="copyright">
+            2018 Shonan Hi-Tech.
+        </div>
+    </footer>
+</body>
+</html>
